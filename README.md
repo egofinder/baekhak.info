@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio
 
-## Getting Started
+Welcome to my portfolio site! This is where I showcase my projects, skills, and experiences. Feel free to explore and get to know more about me.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Experience](#experience)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Introduce yourself here. Talk about your background, education, and any relevant personal information that you'd like to share.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Projects
 
-## Learn More
+List and briefly describe the projects you have worked on. Include links to the live demos or repositories if available.
 
-To learn more about Next.js, take a look at the following resources:
+## Skills
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Highlight your technical skills and areas of expertise. You can categorize them into different sections such as programming languages, frameworks, tools, etc.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Experience
 
-## Deploy on Vercel
+Provide details about your professional experience, internships, or any other relevant work history. Mention the companies you have worked for, your roles, and the projects you have contributed to.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Include your contact information such as email address, LinkedIn profile, or any other preferred method of communication.
+
+Feel free to customize this template to fit your needs. Good luck with your portfolio site!
