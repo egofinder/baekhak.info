@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "@/styles/globals.css";
@@ -20,7 +22,11 @@ export default function RootLayout({
       <body className={robotoMono.className}>
         <main className="container mx-auto">
           <Navbar />
-          <div className="pb-20 pt-28">{children}</div>
+          <div className="pb-20 pt-28">
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </div>
         </main>
       </body>
     </html>
