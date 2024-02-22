@@ -19,10 +19,6 @@ const navigationMenu = [
     title: "Blog",
     link: "/blogs",
   },
-  {
-    title: "Contact",
-    link: "/contact",
-  },
 ];
 
 const Navbar = () => {
