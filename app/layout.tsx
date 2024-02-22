@@ -8,7 +8,10 @@ import Navbar from "@/components/navbar/navbar";
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Baekhak's Portfolio",
+  title: {
+    template: "%s",
+    default: "Home",
+  },
   description: "Start new journey.",
 };
 

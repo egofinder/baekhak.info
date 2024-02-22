@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Content from "@/containers/project/content";
 import Headline from "@/containers/project/headline";
 import { Project } from "@/types/Project";
+
+export const metadata: Metadata = {
+  title: "Project",
+};
 
 const projectData: Project[] = [
   {
