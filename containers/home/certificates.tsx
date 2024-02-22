@@ -42,27 +42,26 @@ const Certificates = () => {
         process in my current endeavors, ensuring that the time and effort
         invested in learning are continually put to good use.
       </p>
-      <p className="mx-auto flex w-full flex-1 flex-row flex-wrap justify-center gap-4">
+      <p className="mx-auto flex flex-1 flex-row flex-wrap justify-center gap-4">
         {certificates.map((certificate, index) => (
           <span
             key={index}
             className={cn(
-              "flex h-40 w-80 items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 lg:w-96",
+              "flex w-80 items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 lg:w-96",
             )}
           >
             <a
               href={certificate.link}
               target="_blank"
-              className="h-full w-full text-center font-medium no-underline"
+              className="flex h-full w-full flex-col items-center justify-between text-center font-medium no-underline"
             >
               {certificate.name}
               <Image
                 src={certificate.image}
                 height={100}
                 alt={certificate.name}
-                className="mx-auto"
                 style={{
-                  marginBlock: "0.5rem",
+                  margin: "1rem",
                 }}
               />
             </a>

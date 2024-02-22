@@ -49,9 +49,9 @@ const WorkPage = () => {
     <section className="container prose mx-auto max-w-7xl px-3 xl:prose-xl">
       <h1>my work</h1>
       <p>
-        Below are the experiences I have gone through and intend to continue on
-        as I seek to establish myself in the United States and pursue my career
-        path.
+        Reflecting on past experiences and looking ahead, I am committed to
+        establishing myself as a software developer and forging my career path
+        in this field.
       </p>
       {experiences.map((experience, index) => (
         <article key={index}>
