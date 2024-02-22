@@ -1,4 +1,4 @@
-const ContactPage = () => {
+const BlogsPage = () => {
   return (
     <div className="flex w-full items-center justify-center">
       Will be added...
@@ -6,4 +6,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default BlogsPage;

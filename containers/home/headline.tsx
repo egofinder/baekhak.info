@@ -4,7 +4,7 @@ const Headline = () => {
   return (
     <>
       <article>
-        <h1 className="font-semibold">Hi, I&apos;m Baekhak</h1>
+        <h1 className="font-semibold">hi, I&apos;m Baekhak</h1>
         <p className="flex flex-row gap-4">
           <a
             href="https://github.com/egofinder"
@@ -19,6 +19,9 @@ const Headline = () => {
             rel="noreferrer noopener"
           >
             <FaLinkedin size={30} className="bg-blue-800 text-white" />
+          </a>
+          <a href="mailto:baekhakjeon@gmail.com" className="no-underline">
+            baekhakjeon@gmail.com
           </a>
         </p>
       </article>

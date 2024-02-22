@@ -1,6 +1,5 @@
 "use client";
 
-import Container from "@/containers/container";
 import { useRouter } from "next/navigation";
 
 const navigationMenu = [
@@ -14,7 +13,11 @@ const navigationMenu = [
   },
   {
     title: "Project",
-    link: "/project",
+    link: "/projects",
+  },
+  {
+    title: "Blog",
+    link: "/blogs",
   },
   {
     title: "Contact",

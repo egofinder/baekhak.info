@@ -8,6 +8,7 @@ import mongodbLogo from "@/public/logos/mongodb-logo.svg";
 import awsLogo from "@/public/logos/aws-logo.svg";
 import azureLogo from "@/public/logos/azure-logo.svg";
 import googleCloudLogo from "@/public/logos/google-cloud-logo.svg";
+import typeScriptLogo from "@/public/logos/ts-logo.svg";
 import Image from "next/image";
 
 const techStacks = [
@@ -22,6 +23,10 @@ const techStacks = [
   {
     name: "JavaScript",
     image: javascriptLogo,
+  },
+  {
+    name: "TypeScript",
+    image: typeScriptLogo,
   },
   {
     name: "Next.js",
@@ -61,7 +66,7 @@ const TechStacks = () => {
         I study various programming languages, frameworks, databases, cloud
         flatforms.
       </p>
-      <p className="mx-auto flex w-full max-w-[600px] flex-1 flex-row flex-wrap justify-center gap-4">
+      <p className="mx-auto flex w-full max-w-[768px] flex-1 flex-row flex-wrap justify-center gap-4">
         {techStacks.map((techStack, index) => (
           <span
             key={index}
