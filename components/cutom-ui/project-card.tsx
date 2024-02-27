@@ -24,9 +24,11 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           <h5 className="mb-5 text-2xl font-bold tracking-tight text-gray-900">
             {title}
           </h5>
-          <a href={githubUrl} target="_blank" rel="noreferrer noopener">
-            <FaGithub size={30} />
-          </a>
+          {githubUrl ? (
+            <a href={githubUrl} target="_blank" rel="noreferrer noopener">
+              <FaGithub size={30} />
+            </a>
+          ) : null}
           <a href={siteUrl} target="_blank" rel="noreferrer noopener">
             <LuExternalLink size={30} />
           </a>
