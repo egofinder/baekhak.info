@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const projectData: Project[] = [
   {
-    title: "Ciel Clair",
+    title: "Ciel Clair (developing...)",
     description:
       "I've created a website for selling clothes. While looking at design elements from other sites and implementing them, I practiced using Tailwind CSS and Next.js 14.",
     siteUrl: "https://cielclair-com.vercel.app/",
