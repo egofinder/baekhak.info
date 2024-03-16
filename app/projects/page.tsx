@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 const projectData: Project[] = [
   {
-    title: "Ciel Clair (developing...)",
+    title: "🚧 Ciel Clair 🚧",
     description:
-      "I've created a website for selling clothes. While looking at design elements from other sites and implementing them, I practiced using Tailwind CSS and Next.js 14.",
+      "Drawing from the five projects I previously studied, I'm currently developing an e-commerce website. For this project, I'm delving into various React hooks, crafting custom hooks, and gaining hands-on experience with authentication and database integration using Supabase. As I build out features, whenever I hit a roadblock, I refer to well-known sources to understand the rationale behind their implementation approaches. This process allows me to enhance my technical skills and deepen my grasp of best practices. My aim with this project is to expand my knowledge and practical experience by utilizing diverse React hooks, creating custom hooks tailored to my needs, and leveraging Supabase's capabilities for authentication and database connectivity. By studying established codebases and understanding the reasoning behind their implementation decisions, I strive to continuously improve my development skills.",
     siteUrl: "https://cielclair-com.vercel.app/",
-    githubUrl: "",
+    githubUrl: "https://github.com/egofinder/cielclair.com",
     imageUrl: "/images/projects/cielclair.png",
     date: "2024-02-26",
   },
