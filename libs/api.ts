@@ -12,23 +12,23 @@ interface Post {
 
 const postsDirectory = join(process.cwd(), "data/blog");
 
-export function getPostSlugs() {
+export function getPostFiles() {
   return fs.readdirSync(postsDirectory);
 }
 
-export function getPostBySlug(slug: string) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+export function getPostWithSlug(file: string) {
+  const slug = file.replace(/\.md$/, "");
+  const fullPath = join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content } as Post;
+  return { ...data, slug: slug, content } as Post;
 }
 
 export function getAllPosts(): Post[] {
-  const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug))
+  const files = getPostFiles();
+  const posts = files
+    .map((file) => getPostWithSlug(file))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;

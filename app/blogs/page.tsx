@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getAllPosts } from "@/libs/api";
+import { getAllPosts, getPostWithSlug } from "@/libs/api";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -7,13 +7,11 @@ export const metadata: Metadata = {
 };
 
 const BlogsPage = () => {
-  const posts = getAllPosts();
-  const postList = posts.map((post) => ({
+  const posts = getAllPosts().map((post) => ({
     title: post.title,
     date: post.date,
     slug: post.slug,
   }));
-  //   console.log(postList);
 
   return (
     <div className="container">
@@ -23,7 +21,7 @@ const BlogsPage = () => {
       </div>
       <br />
 
-      {postList.map((post) => (
+      {posts.map((post) => (
         <div key={post.title} className="flex justify-between gap-5 py-5">
           <Link href={`/blogs/${post.slug}`}>
             <h2 className="cursor-pointer">{post.title}</h2>
