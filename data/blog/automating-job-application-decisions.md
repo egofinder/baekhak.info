@@ -1,5 +1,5 @@
 ---
-title: "Automating Job Application Decisions with Web Scraping and AI Chatbots"
+title: "Automating Job Application Decisions"
 date: "2024-03-27"
 author: "Baekhak Jeon"
 ---

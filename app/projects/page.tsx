@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Content from "@/containers/project/content";
-import Headline from "@/containers/project/headline";
 import { Project } from "@/types/Project";
+import PageHeader from "@/components/custom-ui/page-header";
 
 export const metadata: Metadata = {
   title: "Project",
@@ -68,7 +68,11 @@ const projectData: Project[] = [
 const ProjectPage = () => {
   return (
     <div className="container mx-auto max-w-7xl space-y-8 px-3">
-      <Headline />
+      <PageHeader
+        title="my projects"
+        subTitle="A dynamic reflection of my journey in learning and mastering programming."
+      />
+
       <Content projects={projectData} />
     </div>
   );

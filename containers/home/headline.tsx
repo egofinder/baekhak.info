@@ -1,10 +1,12 @@
+import PageHeader from "@/components/custom-ui/page-header";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Headline = () => {
   return (
     <>
       <article>
-        <h1 className="font-semibold">hi, I&apos;m Baekhak</h1>
+        <PageHeader title="I'm Baekhak" />
+
         <p className="flex flex-row gap-4">
           <a
             href="https://github.com/egofinder"

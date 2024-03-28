@@ -1,3 +1,4 @@
+import PageHeader from "@/components/custom-ui/page-header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -47,12 +48,13 @@ const experiences = [
 const WorkPage = () => {
   return (
     <section className="container prose mx-auto max-w-7xl px-3 xl:prose-xl">
-      <h1>my work</h1>
-      <p>
-        Reflecting on past experiences and looking ahead, I am committed to
+      <PageHeader
+        title="my work"
+        subTitle="Reflecting on past experiences and looking ahead, I am committed to
         establishing myself as a software developer and forging my career path
-        in this field.
-      </p>
+        in this field."
+      />
+
       {experiences.map((experience, index) => (
         <article key={index}>
           <h2>{experience.title}</h2>

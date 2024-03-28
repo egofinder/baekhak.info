@@ -1,6 +1,7 @@
 import { Metadata } from "next";
-import { getAllPosts, getPostWithSlug } from "@/libs/api";
+import { getAllPosts } from "@/libs/api";
 import Link from "next/link";
+import PageHeader from "@/components/custom-ui/page-header";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -15,12 +16,9 @@ const BlogsPage = () => {
 
   return (
     <div className="container">
-      {/* TODO:: Component로 만들어야 함. */}
-      <div className="prose max-w-7xl xl:prose-xl">
-        <h1>my blogs</h1>
-      </div>
-      <br />
+      <PageHeader title="my blog" />
 
+      <br />
       {posts.map((post) => (
         <div key={post.title} className="flex justify-between gap-5 py-5">
           <Link href={`/blogs/${post.slug}`}>
