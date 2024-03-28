@@ -1,4 +1,4 @@
-import { ProjectCard } from "@/components/cutom-ui/project-card";
+import { ProjectCard } from "@/components/custom-ui/project-card";
 import { Project } from "@/types/Project";
 
 interface ContentProps {
