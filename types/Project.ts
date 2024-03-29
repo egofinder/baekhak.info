@@ -1,4 +1,4 @@
-type Project = {
+export type Project = {
   title: string;
   description: string;
   siteUrl: string;
@@ -6,5 +6,3 @@ type Project = {
   imageUrl: string;
   date: string;
 };
-
-export type { Project };

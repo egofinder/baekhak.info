@@ -1,14 +1,11 @@
+import { Post } from "@/types/Post";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
-interface Post {
+type PostWithSlug = Post & {
   slug: string;
-  title: string;
-  date: string;
-  author: string;
-  content: string;
-}
+};
 
 const postsDirectory = join(process.cwd(), "data/blog");
 
@@ -22,10 +19,10 @@ export function getPostWithSlug(file: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: slug, content } as Post;
+  return { ...data, slug: slug, content } as PostWithSlug;
 }
 
-export function getAllPosts(): Post[] {
+export function getAllPosts(): PostWithSlug[] {
   const files = getPostFiles();
   const posts = files
     .map((file) => getPostWithSlug(file))

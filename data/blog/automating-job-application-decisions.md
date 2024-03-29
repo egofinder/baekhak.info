@@ -1,5 +1,7 @@
 ---
 title: "Automating Job Application Decisions"
+category: ["code", "python", "LLM"]
+summary: "This blog post delved into automating job application decisions using web scraping and AI chatbots. We demonstrated how to scrape job postings from a website using Python and Beautiful Soup, storing the data in JSON format. Then, we integrated an AI chatbot from the Ollama platform to assist in deciding whether to apply for each job. By combining these techniques, we streamlined the job search process, enabling users to make informed decisions efficiently."
 date: "2024-03-27"
 author: "Baekhak Jeon"
 ---

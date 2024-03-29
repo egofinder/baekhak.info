@@ -1,5 +1,7 @@
 ---
 title: "Welcome to My Portfolio!"
+category: ["etc"]
+summary: "Baekhak Jeon extends a warm welcome to visitors of his portfolio website, highlighting his background as a Fullstack Developer with a diverse skill set. The post showcases his curated collection of projects, emphasizing technical expertise and creativity. Visitors are encouraged to connect with Baekhak for questions or collaborations. The post concludes with gratitude for visitors' interest and invites them to explore Baekhak's portfolio."
 date: "2024-03-26"
 author: "Baekhak Jeon"
 ---

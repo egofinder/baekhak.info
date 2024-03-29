@@ -1,4 +1,4 @@
-import DateFormatter from "./date-formatter";
+import DateFormatter from "../date-formatter";
 
 type Props = {
   title: string;
