@@ -20,9 +20,11 @@ export function generateMetadata({ params }: Params): Metadata {
   }
 
   const title = `${post.title}`;
+  const description = post.summary;
 
   return {
     title,
+    description,
   };
 }
 

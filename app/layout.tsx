@@ -12,7 +12,8 @@ export const metadata: Metadata = {
     template: "%s",
     default: "Home",
   },
-  description: "Start new journey.",
+  description:
+    "Full Stack Developer with experience in a variety of technologies including JavaScript, Node.js, React, and more. Check out my work and get in touch for collaboration.",
 };
 
 export default function RootLayout({
