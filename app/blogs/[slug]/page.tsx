@@ -4,7 +4,6 @@ import { getAllPosts, getPostWithSlug } from "@/libs/api";
 import markdownToHtml from "@/libs/markdownToHtml";
 import { BlogBody } from "@/components/custom-ui/blog/blog-body";
 import { BlogHeader } from "@/components/custom-ui/blog/blog-header";
-import "github-markdown-css";
 
 type Params = {
   params: {
