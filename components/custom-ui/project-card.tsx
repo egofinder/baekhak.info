@@ -11,13 +11,15 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
   const { title, description, siteUrl, githubUrl, imageUrl } = project;
   return (
     <div className="flex min-h-fit flex-col items-center rounded-lg border border-gray-200 bg-white p-3 shadow md:flex-row">
-      <Image
-        width={500}
-        height={500}
-        className="rounded-xl object-cover p-1 md:h-auto md:w-48  "
-        src={imageUrl}
-        alt="test"
-      />
+      <div className="min-w-[200px]">
+        <Image
+          width={500}
+          height={500}
+          className="rounded-xl object-cover p-1 md:h-auto md:w-48"
+          src={imageUrl}
+          alt="Site Image"
+        />
+      </div>
 
       <div className="flex flex-col items-center justify-between p-4 leading-normal">
         <div className="flex flex-row gap-5">
