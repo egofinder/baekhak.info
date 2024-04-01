@@ -19,7 +19,7 @@ const BlogsPage = () => {
 
   return (
     <div className="container">
-      <PageHeader title="my blog" />
+      <PageHeader title="my blogs" />
 
       <br />
       {posts.map((post) => (
