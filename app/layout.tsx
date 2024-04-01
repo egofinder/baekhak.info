@@ -8,9 +8,10 @@ import Navbar from "@/components/navbar/navbar";
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  // metadataBase: new URL("https://baekhak.info"),
   title: {
-    template: "%s",
     default: "Home",
+    template: "%s | Baekhak's Portfolio",
   },
   description:
     "Full Stack Developer with experience in a variety of technologies including JavaScript, Node.js, React, and more. Check out my work and get in touch for collaboration.",

@@ -1,5 +1,5 @@
-import PageHeader from "@/components/custom-ui/page-header";
 import { Metadata } from "next";
+import PageHeader from "@/components/custom-ui/page-header";
 
 export const metadata: Metadata = {
   title: "Work",

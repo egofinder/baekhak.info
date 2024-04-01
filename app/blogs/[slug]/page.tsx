@@ -4,6 +4,7 @@ import { getAllPosts, getPostWithSlug } from "@/libs/api";
 import markdownToHtml from "@/libs/markdownToHtml";
 import { BlogBody } from "@/components/custom-ui/blog/blog-body";
 import { BlogHeader } from "@/components/custom-ui/blog/blog-header";
+import { cache } from "react";
 
 type Params = {
   params: {
@@ -11,14 +12,18 @@ type Params = {
   };
 };
 
+// Mannually deduplicate requests if not using fetch
+const getPost = cache((slug: string) => getPostWithSlug(slug));
+
 export function generateMetadata({ params }: Params): Metadata {
-  const post = getPostWithSlug(params.slug);
+  // const post = getPostWithSlug(params.slug);
+  const post = getPost(params.slug);
 
   if (!post) {
     return notFound();
   }
 
-  const title = `${post.title}`;
+  const title = post.title;
   const description = post.summary;
 
   return {
@@ -28,7 +33,8 @@ export function generateMetadata({ params }: Params): Metadata {
 }
 
 export default async function Post({ params }: Params) {
-  const post = getPostWithSlug(params.slug);
+  // const post = getPostWithSlug(params.slug);
+  const post = getPost(params.slug);
 
   if (!post) {
     return notFound();
