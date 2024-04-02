@@ -18,7 +18,7 @@ const BlogsPage = () => {
   }));
 
   return (
-    <div className="container">
+    <div className="container px-3">
       <PageHeader title="my blogs" />
 
       <br />

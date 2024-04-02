@@ -44,7 +44,7 @@ export default async function Post({ params }: Params) {
 
   return (
     <main>
-      <article className="container">
+      <article className="container px-3">
         <BlogHeader title={post.title} date={post.date} author={post.author} />
         <BlogBody content={content} />
       </article>
