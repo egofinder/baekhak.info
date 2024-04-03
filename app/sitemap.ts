@@ -8,9 +8,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   return [
-    { url: "https://baekhak.info/work" },
-    { url: "https://baekhak.info/projects" },
-    { url: "https://baekhak.info/blogs" },
+    { url: "https://www.baekhak.info/work" },
+    { url: "https://www.baekhak.info/projects" },
+    { url: "https://www.baekhak.info/blogs" },
     ...blogPostUrls,
   ];
 }

@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://baekhak.info/sitemap.xml",
+    sitemap: "https://www.baekhak.info/sitemap.xml",
   };
 }
