@@ -4,7 +4,7 @@ import { MetadataRoute } from "next";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPosts = getAllPosts();
   const blogPostUrls = blogPosts.map((post) => ({
-    url: `https://baekhak.info/blogs/${post.slug}`,
+    url: `https://www.baekhak.info/blogs/${post.slug}`,
   }));
 
   return [
